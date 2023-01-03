@@ -1,0 +1,37 @@
+{
+    "name": "parzival42codes/laravel-resources-optimisation",
+    "description": "Resources",
+    "license": "MIT",
+    "require": {
+        "php": "^7.4|^8.0",
+        "guzzlehttp/guzzle": "^5.0|^6.0|^7.0",
+        "spatie/laravel-package-tools": "^1.9"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "parzival42codes\\laravelResourcesOptimisation\\": "src"
+        },
+        "files": [
+            "src/App/Helpers/ResourcesOptimisationHelper.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "parzival42codes\\laravelResourcesOptimisation\\Tests\\": "tests"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "parzival42codes\\laravelResourcesOptimisation\\ResourcesServiceProvider"
+            ]
+        }
+    }
+}
