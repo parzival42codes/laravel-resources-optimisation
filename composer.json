@@ -30,7 +30,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "parzival42codes\\laravelResourcesOptimisation\\ResourcesServiceProvider"
+              "LaravelAireBootstrap5ThemeServiceProvider"
             ]
         }
     }
