@@ -12,7 +12,7 @@
     },
     "autoload": {
         "psr-4": {
-            "parzival42codes\\laravelResourcesOptimisation\\": "src"
+            "parzival42codes\\LaravelResourcesOptimisation\\": "src"
         },
         "files": [
             "src/App/Helpers/ResourcesOptimisationHelper.php"
@@ -20,7 +20,7 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "parzival42codes\\laravelResourcesOptimisation\\Tests\\": "tests"
+            "parzival42codes\\LaravelResourcesOptimisation\\Tests\\": "tests"
         }
     },
     "config": {
@@ -30,7 +30,7 @@
     "extra": {
         "laravel": {
             "providers": [
-              "LaravelAireBootstrap5ThemeServiceProvider"
+                "parzival42codes\\LaravelResourcesOptimisation\\ResourcesServiceProvider"
             ]
         }
     }
