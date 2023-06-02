@@ -3,7 +3,7 @@
 namespace parzival42codes\laravelResourcesOptimisation;
 
 use Illuminate\Support\Facades\Route;
-use parzival42codes\laravelResourcesOptimisation\Http\Controllers\LoginController;
+use parzival42codes\laravelResourcesOptimisation\Http\Controllers\ResourcesController;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,7 +19,7 @@ use parzival42codes\laravelResourcesOptimisation\Http\Controllers\LoginControlle
 Route::get(
     '/resources/{fileName}',
     [
-        LoginController::class,
+        ResourcesController::class,
         'show',
     ]
 )
