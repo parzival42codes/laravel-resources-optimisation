@@ -16,11 +16,8 @@ use parzival42codes\laravelResourcesOptimisation\Http\Controllers\ResourcesContr
 |
 */
 
-Route::get(
-    '/resources/{fileName}',
-    [
-        ResourcesController::class,
-        'show',
-    ]
-)
+Route::get('resources/{fileName}', [
+    ResourcesController::class,
+    'show',
+])
     ->where('fileName', '[a-zA-Z0-9\/\.]+')->name('laravelresourcesoptimisation');

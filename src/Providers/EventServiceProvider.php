@@ -6,6 +6,7 @@ use GuzzleHttp\Psr7\MimeType;
 use Illuminate\Contracts\Events\Dispatcher;
 use Illuminate\Foundation\Http\Events\RequestHandled;
 use Illuminate\Http\Response;
+use Illuminate\Support\Facades\Route;
 use Illuminate\Support\ServiceProvider;
 use parzival42codes\laravelResourcesOptimisation\App\Services\Compress;
 
@@ -14,7 +15,6 @@ class EventServiceProvider extends ServiceProvider
     /**
      * Register any other events for your application.
      *
-     * @param  Dispatcher  $events
      * @return void
      */
     public function boot(Dispatcher $events)
@@ -24,7 +24,7 @@ class EventServiceProvider extends ServiceProvider
                 function (RequestHandled $requestHandled) {
                     $requestHandled->response->header('Cache-Control', 'public');
 
-                    $routeCurrent = \Route::current();
+                    $routeCurrent = Route::current();
 
                     $contentMimeType = null;
 
