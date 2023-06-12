@@ -21,7 +21,7 @@ class ResourcesController extends Controller
         $mapping = config('laravelResourcesOptimisation.map');
 
         if (isset($mapping[$fileName])) {
-            $filePath = base_path() . $mapping[$fileName];
+            $filePath = base_path().$mapping[$fileName];
 
             if (is_file($filePath)) {
                 $this->response->setContent(file_get_contents($filePath));
@@ -32,12 +32,12 @@ class ResourcesController extends Controller
 
         app('debugbar')->disable();
 
-        $fileName = public_path() . '/' . $fileName;
+        $fileName = public_path().'/'.$fileName;
 
         if (! File::exists($fileName)) {
             abort(
                 400,
-                'File ' . $fileName . ' not exists'
+                'File '.$fileName.' not exists'
             );
         }
 
