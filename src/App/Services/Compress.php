@@ -86,7 +86,7 @@ class Compress
                 'timeout=5, max=100')
             ->header('Expires',
                 gmdate('D, d M Y H:i:s',
-                    time() + 31536000) . ' GMT')
+                    time() + 31536000).' GMT')
             ->header('ETag',
                 $hash)
             ->header('Content-Length',
